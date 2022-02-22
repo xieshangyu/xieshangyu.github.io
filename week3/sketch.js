@@ -20,10 +20,7 @@ function setup() {
 // }
 
 function draw() {
-//   if (mouseIsPressed) {
-//     line(pmouseX, pmouseY, mouseX, mouseY);
-//   }
     background(175)
     var vol = mic.getLevel();
-    ellipse(width / 2, height / 2, vol * 500);
+    ellipse(width / 2, height / 2, vol * 10000);
 }

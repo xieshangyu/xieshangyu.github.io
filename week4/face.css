@@ -38,6 +38,14 @@
 }
 
 
+.arm {
+    position: absolute;
+    top: 570px;
+    left: -100px;
+    transform: scale(1.5);
+}
+
+
 .head
 {
     position: absolute;
@@ -84,7 +92,7 @@
     width: 80px;
     height: 10px;
     position: absolute;
-    background: blue;
+    background: #1eb4e9;
     border-radius: 0%;
 }
 
