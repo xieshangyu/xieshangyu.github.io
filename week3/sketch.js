@@ -20,7 +20,7 @@ function setup() {
 // }
 
 function draw() {
-    background(175)
+    background(175);
     var vol = mic.getLevel();
-    ellipse(width / 2, height / 2, vol * 10000);
+    ellipse(width / 2, height / 2, 2 * 10);
 }
