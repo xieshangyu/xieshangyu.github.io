@@ -12,22 +12,54 @@ body {
 }
 
 .div2 {
-    background-color: salmon;
+    background-image: url("map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.empty {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    background-color: aliceblue;
+    opacity: 0;
 }
 
 .square {
-    width: 150px;
-    height: 150px;
-    background-color: fuchsia;
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(-1000px);
+    background: url('chain.png');
+    background-size: 800px;
 }
 
+.square_2 {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(1000px);
+    background: url('chain.png');
+    background-size: 800px;
+}
 
-/* .square_2{
-    margin-top: 300px;
-    width: 150px;
-    height: 150vh;
-    background-color: blue;
-} */
+.square_3 {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(-1000px);
+    background: url('chain.png');
+    background-size: 800px;
+}
+
+.square_4 {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(1000px);
+    background: url('chain.png');
+    background-size: 800px;
+}
 
 .red {
     background-color: red;
