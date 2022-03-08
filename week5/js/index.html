@@ -6,20 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScrollTrigger</title>
     <link rel="stylesheet" href="anime.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aldrich" />
 </head>
 
 <body>
-    <div class="div1"></div>
-    <div class="div2">
-        <div class="empty"></div>
-        <div class="square"></div>
-        <div class="empty"></div>
-        <div class="square_2"></div>
-        <div class="empty"></div>
-        <div class="square_3"></div>
-        <div class="empty"></div>
-        <div class="square_4"></div>
+    <div class="div1">
+        <div id="mySidepanel" class="sidepanel_1">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- piece_01 -->
+            <h1 style="font-size: 36px; padding: 10px;">
+                Frame
+            </h1>
+            <div class="FRAME"></div>
+        </div>
+
+        <button class="transparent" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+
+        <div class="rotateImage"></div>
+
+
+
+        <div class="eye">
+            <div class="shut">
+                <span></span>
+            </div>
+            <div class="eyeball">
+            </div>
+        </div>
+
     </div>
+    <div class="div2">
+        <h1>ABOUT</h1>
+        <p>
+            “We=Link: Ten Easy Pieces” is a special online exhibition sponsored by Chronus Art Center (CAC). It shows the CAC’s response to the coronavirus pandemic and widespread lock-down. The title “We=Link: Ten Easy Pieces” implies the American actor Jack Nicholson’s
+            iconic movie
+            <span>
+                <span class="highlighted">Five Easy Pieces</span>
+            </span>
+            <img src="FEP.jpg"> with a subtle twist on
+
+            <span>
+                <span class="highlighted">WeChat</span>
+            </span>
+            <img src="wc.png">, the popular Chinese social media platform.
+        </p>
+
+
+
+
+
+    </div>
+    <div class="div3">
+        <div class="skin">
+
+            <!-- <div class="tooltip"></div> -->
+            <div id="mySidepanel_2" class="sidepanel_2">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav_2()">&times;</a>
+                <!-- piece_01 -->
+                <h1 style="font-size: 36px; padding: 10px;">
+                    Ten Pieces
+                </h1>
+                <!-- The title “We=Link: Ten Easy Pieces” denotes a community of solidarity as a network of empowerment. The ten Easy Pieces, featuring new commissions by the artists aaajiao, Tega Brain & Sam Lavigne, JODI, LI Weiyi, Slime Engine and YE Funa in conjunction
+                with works by Evan Roth, Helmut Smits, Yangachi and Raphaël Bastide.
+                <div class="FEP"></div> -->
+                <div class="row">
+                    <div class="column">
+                        The title “We=Link: Ten Easy Pieces” denotes a community of solidarity as a network of empowerment. The ten Easy Pieces, featuring new commissions by the artists aaajiao, Tega Brain & Sam Lavigne, JODI, LI Weiyi, Slime Engine and YE Funa in conjunction
+                        with works by Evan Roth, Helmut Smits, Yangachi and Raphaël Bastide.
+                    </div>
+                    <div class="column">
+                        <div class="TEP"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="openbtn_2" onclick="openNav_2()"> xx</button>
+            <div class="openbtn_2_fake"></div>
+
+
+
+            <div id="mySidepanel_3" class="sidepanel_3">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav_3()">&times;</a>
+                <!-- piece_01 -->
+                <h1 style="font-size: 36px; padding: 10px;">
+                    n22.230210e113.940187.hk | Evan Roth
+                </h1>
+
+                <div class="row">
+                    <div class="column">
+                        n22.230210e113.940187.hk is a network located video depicting a landscape in Hong Kong where internet submarine fiber optic cables meet the land. The artists, Evan Roth, tends to depict a physical connection between the viewer and the landscape.
+
+                    </div>
+                    <div class="column">
+                        <div class="EVANROTH"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="openbtn_3" onclick="openNav_3()"> xx</button>
+            <div class="openbtn_3_fake"></div>
+
+
+
+
+
+
+
+
+
+
+
+            <div id="mySidepanel_4" class="sidepanel_4">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav_4()">&times;</a>
+                <!-- piece_01 -->
+                <h1 style="font-size: 36px; padding: 10px;">
+                    evasive.tech | Raphaël Bastide
+                </h1>
+
+                <div class="row">
+                    <div class="column">
+                        evasive.tech is quarantine-driven coding performances created by Raphaël Bastide, starting March 17 2020. evasive.tech is a series of episodes, each being envisioned and coded on a daily basis.
+
+                    </div>
+                    <div class="column">
+                        <div class="EVASIVE"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="openbtn_4" onclick="openNav_4()"> xx</button>
+            <div class="openbtn_4_fake"></div>
+
+
+
+
+
+
+
+            <div id="mySidepanel_5" class="sidepanel_5">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav_5()">&times;</a>
+                <!-- piece_01 -->
+                <h1 style="font-size: 36px; padding: 10px;">
+                    Screen time | Helmut Smitz
+                </h1>
+
+                <div class="row">
+                    <div class="column">
+                        Screen Time is a community clock connecting strangers through their mobile backgrounds. Participants are invited to take part by making a screenshot of their mobile device lock screen and submitting it to the allocated time slot.
+                    </div>
+                    <div class="column">
+                        <div class="ST"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="openbtn_5" onclick="openNav_5()"> xx</button>
+            <div class="openbtn_5_fake"></div>
+
+            <div class="empty"></div>
+            <div class="square"></div>
+            <div class="empty"></div>
+            <div class="square_2"></div>
+            <div class="empty"></div>
+            <div class="square_3"></div>
+            <div class="empty"></div>
+            <div class="square_4"></div>
+        </div>
+    </div>
+    <!-- <div class="div4"></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
