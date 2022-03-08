@@ -510,7 +510,7 @@ span:hover+img {
 .openbtn_4 {
     width: 200px;
     height: 200px;
-    transform: translate(700%, 250%);
+    transform: translate(650%, 250%);
     font-size: 20px;
     /* cursor: pointer; */
     position: absolute;
@@ -531,7 +531,7 @@ span:hover+img {
     height: 200px;
     z-index: 1;
     position: absolute;
-    transform: translate(700%, 250%);
+    transform: translate(650%, 250%);
     background-size: 200px;
     background-repeat: no-repeat;
     background-image: url("hosptial.png");
