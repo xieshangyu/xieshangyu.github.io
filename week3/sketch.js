@@ -19,6 +19,50 @@ function setup() {
     currentCamera = 1;
 }
 
+
+class spaceship {
+    constructor(x, y, z, size, direction, mass) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.size = size;
+        this.direction = direction;
+        this.mass = mass;
+
+    }
+    draw() {
+
+        push();
+
+
+
+        translate(this.x - width / 2, this.y - width / 2, this.z - width / 2);
+
+
+        push();
+        rotateX(angle * 0.7);
+        rotateY(angle * 0.7);
+        fill(230, 150, 150);
+        sphere(30, 24, 16);
+        torus(100, 10);
+        pop();
+
+        push();
+
+        fill(10, random(100, 200), 150);
+        sphere(30, 24, 16);
+
+        pop();
+
+        angle += 0.07
+
+        pop();
+    }
+
+}
+
+
+
 function draw() {
     background(0, 0, 30);
     ellipsoid(30, 40, 40);
@@ -26,22 +70,13 @@ function draw() {
     cam1.setPosition(200 * sin(plus), 0, 200 * cos(plus));
     plus += 1
     setCamera(cam1);
-    // if (frameCount % 100 === 0) {
-    // if (currentCamera === 1) {
-    // setCamera(cam1);
-    // currentCamera = 0;
-    // } else {
-    // setCamera(cam2);
-    // currentCamera = 1;
-    // }
-    // }
 
-    // directionalLight([255],createVector(0,0,-1));
+
     if (random(1) > 0.97) {
 
-        // var x = random(-100,100);
-        // var y = random(-100,100);
-        // var z = random(-100,100);
+        // var x = random(-100, 100);
+        // var y = random(-100, 100);
+        // var z = random(-100, 100);
         var pos = createVector(0, 0, 0);
 
 
@@ -51,7 +86,6 @@ function draw() {
             // var g = map(sin(frameCount),-1,1,255,0)+random(-50,50);
             // var b = map(sin(frameCount),-1,1,0,255)+random(-50,50);
 
-            // var c = color(r,g,b);
 
             var p = new Particle(pos)
             particles.push(p)
