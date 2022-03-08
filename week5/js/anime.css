@@ -2,6 +2,13 @@ body {
     margin: 0;
 }
 
+.container {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y proximity; */
+}
+
 h1 {
     font-size: 48px;
 }
@@ -126,6 +133,7 @@ span:hover+img {
 .div3,
 .div4 {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .div1 {
