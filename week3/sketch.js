@@ -1,60 +1,102 @@
 var canvas;
 
-let angle = 0;
+let particles = []
+let cam1, cam2;
+let currentCamera;
+let plus = 200;
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
-    for (let i = 0; i < 30; i++) {
-        spaceship[i] = new spaceship(i * 130 - width / 2, random(0, windowHeight), 20, 50, random(0.02, 0.1));
-    }
+    angleMode(DEGREES);
+
+    cam1 = createCamera();
+    cam2 = createCamera();
+    cam2.setPosition(30, 0, 50);
+    cam2.lookAt(0, 0, 0);
+    cam2.ortho();
+
+
+    currentCamera = 1;
 }
 
 function draw() {
-    background(200);
+    background(0, 0, 30);
+    ellipsoid(30, 40, 40);
+    cam1.lookAt(0, 0, 0);
+    cam1.setPosition(200 * sin(plus), 0, 200 * cos(plus));
+    plus += 1
+    setCamera(cam1);
+    // if (frameCount % 100 === 0) {
+    // if (currentCamera === 1) {
+    // setCamera(cam1);
+    // currentCamera = 0;
+    // } else {
+    // setCamera(cam2);
+    // currentCamera = 1;
+    // }
+    // }
 
-    for (let i = 0; i < 20; i++) {
-        spaceship[i].draw();
-        spaceship[i].move();
+    // directionalLight([255],createVector(0,0,-1));
+    if (random(1) > 0.97) {
+
+        // var x = random(-100,100);
+        // var y = random(-100,100);
+        // var z = random(-100,100);
+        var pos = createVector(0, 0, 0);
+
+
+        for (var i = 0; i < 100; i++) {
+
+            // var r = map(sin(frameCount),-1,1,0,255)+random(-50,50);
+            // var g = map(sin(frameCount),-1,1,255,0)+random(-50,50);
+            // var b = map(sin(frameCount),-1,1,0,255)+random(-50,50);
+
+            // var c = color(r,g,b);
+
+            var p = new Particle(pos)
+            particles.push(p)
+        }
+    }
+
+    for (var i = particles.length - 1; i >= 0; i--) {
+        if (dist(particles[i].pos.x, particles[i].pos.y, particles[i].pos.z, 0, 0, 0) < 500) {
+            particles[i].update();
+            particles[i].show();
+        } else {
+            particles.splice(i, 1)
+        }
     }
 }
 
-class spaceship {
-    constructor(x, y, z, size, direction, mass) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.size = size;
-        this.rotate = rotate;
-        this.direction = direction;
-        this.mass = mass;
-        this.hitground = false;
-        this.hitup = false;
-    }
+class Particle {
+    constructor(pos, c) {
+        this.pos = createVector(pos.x, pos.y, pos.z);
+        this.vel = p5.Vector.random3D().normalize().mult(random(4, 6))
 
-    move() {
-        if (this.y >= windowHeight + 50) {
-            this.hitground = true;
-        }
-        if (this.hitground == true) {
-            this.y -= 5;
-        }
-        if (this.hitground == false) {
-            this.y += 10;
-        }
-        if (this.y <= 0 && this.hitground == true) {
-            this.hitground = false;
-        }
+        this.c = c;
+
+        // this.detailX = createSlider(3, 16, 3);
+        // this.detailX.position(10, height + 5);
+        // this.detailX.style('width', '80px');
     }
-    draw() {
+    update() {
+        this.pos.add(this.vel)
+    }
+    show() {
         push();
-        fill(random(100, 130), random(100, 200), random(100, 200));
-        translate(this.x, this.y - width / 2, this.z);
-        push();
-        rotateX(angle * 0.07);
-        rotateY(angle * 0.07);
-        torus(this.size, 10);
-        pop();
-        angle += 0.07
+        stroke(100);
+        fill(255, 255, 255, 180)
+        translate(this.pos.x, this.pos.y, this.pos.z);
+
+
+        // rotateX(millis() / 10);
+        // rotateY(millis() / 10);
+        // rotateY(millis() / 10);
+        box(15, 15, 15);
+
+
+
+
         pop();
     }
 }
