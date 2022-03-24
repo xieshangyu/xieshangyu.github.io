@@ -87,10 +87,10 @@
 
 #box6 {
     position: absolute;
-    left: 4700px;
+    left: 470px;
     top: 300px;
     display: inline-block;
-    background: url(eye.png);
+    background: url(threebody.png);
     background-size: 200px;
     background-position: center;
 }
