@@ -163,7 +163,7 @@ span:hover+img {
 }
 
 .div1 {
-    background-color: #ffb4fd;
+    background-color: #ffffff;
 }
 
 .div2 {
@@ -205,6 +205,14 @@ span:hover+img {
 }
 
 .empty {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.empty1 {
     position: relative;
     width: 1500px;
     height: 100px;

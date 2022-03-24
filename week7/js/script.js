@@ -4,7 +4,7 @@ gsap.to(".square", {
     x: 0,
     duration: 8,
     scrollTrigger: {
-        trigger: ".square",
+        trigger: ".empty1",
         start: "top 50%",
         end: "top 80%",
         scrub: 4,

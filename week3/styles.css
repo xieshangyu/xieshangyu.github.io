@@ -85,6 +85,16 @@
     background-position: center;
 }
 
+#box6 {
+    position: absolute;
+    left: 4700px;
+    top: 300px;
+    display: inline-block;
+    background: url(eye.png);
+    background-size: 200px;
+    background-position: center;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
