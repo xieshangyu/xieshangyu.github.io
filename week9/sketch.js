@@ -22,6 +22,7 @@ let Array_y = [];
 let start = 0;
 let shot_sound;
 let glass_sound;
+let counter = 0;
 
 function preload() {
     target = loadImage("https://cdn.glitch.com/58200b26-1b78-4f2d-abc8-e08313ebb3af%2F%E5%87%86%E6%98%9F.png?v=1618451561761")
@@ -36,6 +37,8 @@ function setup() {
     video.hide();
     poseNet = ml5.poseNet(video, modelReady);
     poseNet.on('pose', gotPoses);
+
+    setInterval(increment, 1); // 2000 ms = every 2 seconds
 }
 
 function gotPoses(poses) {
@@ -73,6 +76,9 @@ function draw() {
     //     image(hole, noseX + 25, noseY + 25, 200, 200);
     //     pop();
     // }
+    if (counter % 80 == 0) {
+        happen();
+    }
     for (let i = 0; i < Array_x.length; i++) {
         push();
         imageMode(CENTER);
@@ -161,10 +167,14 @@ function draw() {
 
 // }
 
-function mouseClicked() {
+function happen() {
     Array_x.push(noseX);
     Array_y.push(noseY);
 
     glass_sound.play();
     shot_sound.play();
+}
+
+function increment() {
+    counter++;
 }
