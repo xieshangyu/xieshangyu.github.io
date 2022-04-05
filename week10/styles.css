@@ -1,0 +1,26 @@
+#myContainer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: yellow;
+}
+
+#myAnimation1 {
+    width: 1000px;
+    height: 1000px;
+    /* left: 100px; */
+    position: absolute;
+    background-image: url(people.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+}
+
+#myAnimation2 {
+    width: 1000px;
+    height: 100px;
+    /* left: 100px; */
+    position: absolute;
+    background-image: url(title.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 100px;
+}
