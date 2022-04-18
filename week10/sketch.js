@@ -1,7 +1,8 @@
 var id = null;
-
+// let elem1 = document.getElementById("myAnimation1");
+// let elem2 = document.getElementById("myAnimation1");
 function myMove() {
-    var elem = document.getElementById("myAnimation1");
+    let elem1 = document.getElementById("myAnimation1");
     var pos = 0;
     var state = 0;
     clearInterval(id);
@@ -16,7 +17,7 @@ function myMove() {
         if (state == 1) {
             // clearInterval(id);
             pos--;
-            elem.style.top = pos + 'px';
+            elem1.style.top = pos + 'px';
             // elem.style.left = pos + 'px';
         }
         if (pos == 0 && state == 1) {
@@ -26,7 +27,7 @@ function myMove() {
         if (state == 0) {
             // clearInterval(id);
             pos++;
-            elem.style.top = pos + 'px';
+            elem1.style.top = pos + 'px';
             // elem.style.left = pos + 'px';
         }
     }
@@ -34,7 +35,7 @@ function myMove() {
 
 
 function myMove2() {
-    var elem = document.getElementById("myAnimation2");
+    let elem2 = document.getElementById("myAnimation2");
     var pos = 0;
     var state = 0;
     clearInterval(id);
@@ -49,7 +50,7 @@ function myMove2() {
         if (state == 1) {
             // clearInterval(id);
             pos--;
-            elem.style.left = pos + 'px';
+            elem2.style.left = pos + 'px';
             // elem.style.left = pos + 'px';
         }
         if (pos == 0 && state == 1) {
@@ -59,7 +60,7 @@ function myMove2() {
         if (state == 0) {
             // clearInterval(id);
             pos++;
-            elem.style.left = pos + 'px';
+            elem2.style.left = pos + 'px';
             // elem.style.left = pos + 'px';
         }
     }
