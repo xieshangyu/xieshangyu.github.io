@@ -87,7 +87,7 @@ body {
 
 .tabs .tab-body div h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color: #222;
 }
 
@@ -100,11 +100,12 @@ body {
     z-index: 1;
 }
 
-h1 {
+h3 {
     position: absolute;
     font-family: "Monument Extended";
     font-weight: lighter;
-    font-size: 64px;
+    font-size: 32px;
+    color: #f5f5f5;
 }
 
 .block-1 {
@@ -147,7 +148,7 @@ h1 {
 
 .blocksecond {
     position: relative;
-    width: 300px;
+    width: 500px;
     height: 300px;
     margin: 10px 400px 20px 80px;
     border-radius: 25px;
@@ -157,26 +158,27 @@ h1 {
     position: absolute;
     font-family: "Monument Extended";
     font-weight: lighter;
-    font-size: 64px;
+    font-size: 32px;
+    color: #f5f5f5;
 }
 
 .block-5 {
     background: url(weapon1.png) no-repeat 50% 50%;
-    background-size: 250px;
+    background-size: 450px;
     /* background-size: cover; */
     background-color: black;
 }
 
 .block-6 {
     background: url(weapon2.png) no-repeat 50% 50%;
-    background-size: 150px;
+    background-size: 200px;
     /* background-size: cover; */
     background-color: black;
 }
 
 .block-7 {
     background: url(weapon3.png) no-repeat 50% 50%;
-    background-size: 250px;
+    background-size: 400px;
     background-color: black;
 }
 

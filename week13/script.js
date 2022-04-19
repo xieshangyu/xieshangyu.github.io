@@ -12,6 +12,8 @@ for (let i = 0; i < tabHeaders.length; i++) {
 }
 
 
+//catation: https://quick-adviser.com/how-do-you-make-a-vertical-tab-in-jquery/
+
 
 ! function(t) {
     if ("object" == typeof exports && "undefined" != typeof module) module.exports = t();
@@ -487,17 +489,6 @@ function setweapon4() {
 
 }
 
-
-// image_array = ['person1.jpg']
-
-// function showresult() {
-//     var time = new Date().getHours();
-//     selected_image = image_array[1];
-//     document.getElementById("demo").src = "person1.jpg";
-// if (person == 1) {
-//     document.getElementById("demo").src = "person1.jpg";
-// }
-// }
 
 function myFunction() {
     if (head == 1 && weapon == 1) {
