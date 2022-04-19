@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    z-index: 2;
 }
 
 .tabs .tab-header {
@@ -81,11 +82,128 @@ body {
 .tabs .tab-body>div {
     width: 400px;
     height: 100vh;
-    padding: 40vh 0px;
+    padding: 10vh 0px;
 }
 
 .tabs .tab-body div h2 {
     font-size: 40px;
     margin-bottom: 10px;
     color: #222;
+}
+
+.block {
+    position: relative;
+    width: 360px;
+    height: 550px;
+    margin: 0px 300px 20px 80px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    font-family: "Monument Extended";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.block-1 {
+    background: url(person1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url(person2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url(person3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url(img-four.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+
+/* .block-1 h1,
+.block-3 h1,
+.block-5 h1 {
+    bottom: 0;
+    right: -60px;
+}
+
+.block-2 h1,
+.block-4 h1 {
+    right: -60px;
+} */
+
+.blocksecond {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px 400px 20px 80px;
+    border-radius: 25px;
+}
+
+h1 {
+    position: absolute;
+    font-family: "Monument Extended";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.block-5 {
+    background: url(weapon1.png) no-repeat 50% 50%;
+    background-size: 250px;
+    /* background-size: cover; */
+    background-color: black;
+}
+
+.block-6 {
+    background: url(weapon2.png) no-repeat 50% 50%;
+    background-size: 150px;
+    /* background-size: cover; */
+    background-color: black;
+}
+
+.block-7 {
+    background: url(weapon3.png) no-repeat 50% 50%;
+    background-size: 250px;
+    background-color: black;
+}
+
+.block-8 {
+    background: url(img-four.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container2 {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+#image {
+    display: none;
+}
+
+img {
+    width: 350px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+button {
+    font-weight: 600;
+    font-size: 18px;
+    width: 350px;
+    height: 100px;
+    border-radius: 25px;
 }
