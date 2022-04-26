@@ -43,16 +43,16 @@ section h1 {
 
 .empty {
     position: relative;
-    width: 1500px;
-    height: 50px;
+    width: 100vh;
+    height: 10vh;
     background-color: aliceblue;
     opacity: 0;
 }
 
 .app_block {
     float: left;
-    width: 50px;
-    height: 400px;
+    width: 10vh;
+    height: 5vh;
 }
 
 
@@ -61,32 +61,50 @@ section h1 {
 .square {
     position: relative;
     width: 1500px;
-    height: 400px;
+    height: 40vh;
     transform: translateX(-1000px);
 }
 
 .app1 {
     float: left;
-    width: 800px;
-    height: 400px;
+    width: 80vh;
+    height: 40vh;
     background-size: 800px;
     background-image: url(skin1.webp);
     background-repeat: no-repeat;
     background-position: center;
     /* transform: translateX(-1000px); */
     border-radius: 25px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.app1:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .app2 {
     float: left;
-    width: 400px;
-    height: 400px;
+    width: 40vh;
+    height: 40vh;
     background-size: 600px;
     background-image: url(glass.gif);
     background-repeat: no-repeat;
     background-position: center;
     /* transform: translateX(-1000px); */
     border-radius: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.app2:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -95,30 +113,48 @@ section h1 {
 .square_2 {
     position: relative;
     width: 1500px;
-    height: 100px;
+    height: 40vh;
     transform: translateX(1000px);
 }
 
 .app3 {
     float: left;
-    width: 400px;
-    height: 400px;
+    width: 40vh;
+    height: 40vh;
     background-size: 600px;
     background-image: url(line.gif);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.app3:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .app4 {
     float: left;
-    width: 800px;
-    height: 400px;
+    width: 80vh;
+    height: 40vh;
     background-size: 800px;
     background-image: url(skin2.webp);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.app4:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .square_3 {
