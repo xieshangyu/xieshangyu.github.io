@@ -10,10 +10,10 @@ gsap.to(".square", {
         scrub: 4,
         toggleActions: "restart reverse         none           none",
         //             onEnter onLeave       onEnterback    onleaveBack
-        // markers: {
-        //     startColor: "purple",
-        //     endColor: "fuchsia",
-        // },
+        markers: {
+            startColor: "purple",
+            endColor: "fuchsia",
+        },
     }
 })
 

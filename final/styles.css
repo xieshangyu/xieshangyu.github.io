@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+section {
+    height: 100vh;
+    color: black;
+}
+
+section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+/* animation */
+
+.empty {
+    position: relative;
+    width: 1500px;
+    height: 50px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.app_block {
+    float: left;
+    width: 50px;
+    height: 400px;
+}
+
+
+/* first list off app */
+
+.square {
+    position: relative;
+    width: 1500px;
+    height: 400px;
+    transform: translateX(-1000px);
+}
+
+.app1 {
+    float: left;
+    width: 800px;
+    height: 400px;
+    background-size: 800px;
+    background-image: url(skin1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* transform: translateX(-1000px); */
+    border-radius: 25px;
+}
+
+.app2 {
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-size: 600px;
+    background-image: url(glass.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* transform: translateX(-1000px); */
+    border-radius: 25px;
+}
+
+
+/* second list of app */
+
+.square_2 {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(1000px);
+}
+
+.app3 {
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-size: 600px;
+    background-image: url(line.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.app4 {
+    float: left;
+    width: 800px;
+    height: 400px;
+    background-size: 800px;
+    background-image: url(skin2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.square_3 {
+    /* position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(-1000px);
+    background: url('chain.png');
+    background-size: 800px; */
+    width: 400px;
+    height: 400px;
+    background-size: 600px;
+    background-image: url(glass.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-1000px);
+    border-radius: 25px;
+}
+
+.square_4 {
+    /* position: relative;
+    width: 1500px;
+    height: 100px;
+    transform: translateX(1000px);
+    background: url('chain.png');
+    background-size: 800px; */
+    width: 400px;
+    height: 400px;
+    background-size: 600px;
+    background-image: url(glass.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(1000px);
+    border-radius: 25px;
+}
