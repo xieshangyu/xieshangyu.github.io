@@ -17,7 +17,7 @@ let scene = new ScrollMagic.Scene({
         triggerElement: intro,
         triggerHook: 0
     })
-    .addIndicators()
+    // .addIndicators()
     .setPin(intro)
     .addTo(controller);
 
@@ -70,10 +70,10 @@ gsap.to(".square", {
             scrub: 4,
             toggleActions: "restart reverse         none           none",
             // onEnter onLeave onEnterback onleaveBack
-            markers: {
-                startColor: "purple",
-                endColor: "fuchsia",
-            },
+            // markers: {
+            //     startColor: "purple",
+            //     endColor: "fuchsia",
+            // },
         }
     })
     //ciation

@@ -43,15 +43,15 @@ section h1 {
 
 .empty {
     position: relative;
-    width: 100vh;
-    height: 10vh;
+    width: 10vh;
+    height: 7vh;
     background-color: aliceblue;
     opacity: 0;
 }
 
 .app_block {
     float: left;
-    width: 10vh;
+    width: 7vh;
     height: 5vh;
 }
 
