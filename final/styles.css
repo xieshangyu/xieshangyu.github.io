@@ -61,7 +61,7 @@ section h1 {
 
 .square {
     position: relative;
-    width: 1500px;
+    width: 200vw;
     height: 40vh;
     transform: translateX(-1000px);
 }
@@ -70,7 +70,7 @@ section h1 {
     float: left;
     width: 80vh;
     height: 40vh;
-    background-size: 800px;
+    background-size: 90vh;
     background-image: url(skin1.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@ section h1 {
     float: left;
     width: 40vh;
     height: 40vh;
-    background-size: 600px;
+    background-size: 80vh;
     background-image: url(glass.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -113,7 +113,7 @@ section h1 {
 
 .square_2 {
     position: relative;
-    width: 1500px;
+    width: 200vw;
     height: 40vh;
     transform: translateX(1000px);
 }
@@ -122,7 +122,7 @@ section h1 {
     float: left;
     width: 40vh;
     height: 40vh;
-    background-size: 600px;
+    background-size: 90vh;
     background-image: url(line.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -142,7 +142,7 @@ section h1 {
     float: left;
     width: 80vh;
     height: 40vh;
-    background-size: 800px;
+    background-size: 90vh;
     background-image: url(skin2.webp);
     background-repeat: no-repeat;
     background-position: center;
