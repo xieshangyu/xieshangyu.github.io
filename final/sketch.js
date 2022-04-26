@@ -53,29 +53,30 @@ setInterval(() => {
 
 
 
-
+//citation: https://www.youtube.com/watch?v=FH0B3Gdm0P0&ab_channel=TheCodeCreative
+//Scroll Trigger Tutorial - 5 - Pin
 
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".square", {
-    x: 50,
-    duration: 8,
-    scrollTrigger: {
-        trigger: ".square_2",
-        start: "top 80%",
-        end: "top 60%",
-        scrub: 4,
-        toggleActions: "restart reverse         none           none",
-        // onEnter onLeave onEnterback onleaveBack
-        markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-        },
-    }
-})
-
+        x: 50,
+        duration: 8,
+        scrollTrigger: {
+            trigger: ".square_2",
+            start: "top 80%",
+            end: "top 60%",
+            scrub: 4,
+            toggleActions: "restart reverse         none           none",
+            // onEnter onLeave onEnterback onleaveBack
+            markers: {
+                startColor: "purple",
+                endColor: "fuchsia",
+            },
+        }
+    })
+    //ciation
 
 gsap.to(".square_2", {
     x: 50,
