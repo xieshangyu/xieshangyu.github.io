@@ -25,7 +25,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-        duration: 3000,
+        duration: 2000,
         triggerElement: intro,
         triggerHook: 0
     })
