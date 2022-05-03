@@ -67,6 +67,7 @@ section h1 {
 }
 
 .app1 {
+
     float: left;
     width: 80vh;
     height: 40vh;
@@ -74,18 +75,33 @@ section h1 {
     background-image: url(skin1.webp);
     background-repeat: no-repeat;
     background-position: center;
-    /* transform: translateX(-1000px); */
     border-radius: 25px;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .app1:hover {
+    background-color: #ddd;
     transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+a.large:link, a.large:visited {
+    width: 80vh;
+    height: 40vh;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+
+
+
 
 .app2 {
     float: left;
@@ -95,19 +111,28 @@ section h1 {
     background-image: url(glass.gif);
     background-repeat: no-repeat;
     background-position: center;
-    /* transform: translateX(-1000px); */
     border-radius: 25px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .app2:hover {
     transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+
+a.small:link, a.small:visited {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
 /* second list of app */
 
@@ -127,15 +152,14 @@ section h1 {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .app3:hover {
     transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .app4 {
@@ -147,24 +171,17 @@ section h1 {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .app4:hover {
     transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .square_3 {
-    /* position: relative;
-    width: 1500px;
-    height: 100px;
-    transform: translateX(-1000px);
-    background: url('chain.png');
-    background-size: 800px; */
     width: 400px;
     height: 400px;
     background-size: 600px;
@@ -176,12 +193,6 @@ section h1 {
 }
 
 .square_4 {
-    /* position: relative;
-    width: 1500px;
-    height: 100px;
-    transform: translateX(1000px);
-    background: url('chain.png');
-    background-size: 800px; */
     width: 400px;
     height: 400px;
     background-size: 600px;
@@ -191,3 +202,6 @@ section h1 {
     transform: translateX(1000px);
     border-radius: 25px;
 }
+
+
+
