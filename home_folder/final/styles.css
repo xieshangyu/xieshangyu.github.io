@@ -72,7 +72,7 @@ section h1 {
     width: 80vh;
     height: 40vh;
     background-size: 90vh;
-    background-image: url(skin1.webp);
+    background-image: url(bullet\ time.gif);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -108,7 +108,7 @@ a.large:link, a.large:visited {
     width: 40vh;
     height: 40vh;
     background-size: 80vh;
-    background-image: url(glass.gif);
+    background-image: url(knief.gif);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -166,8 +166,8 @@ a.small:link, a.small:visited {
     float: left;
     width: 80vh;
     height: 40vh;
-    background-size: 90vh;
-    background-image: url(skin2.webp);
+    background-size: 100vh;
+    background-image: url(deadpool.webp);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -205,3 +205,9 @@ a.small:link, a.small:visited {
 
 
 
+a {
+    color: #000000;
+    font-size: 80px;
+
+  }
+  

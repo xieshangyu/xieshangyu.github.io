@@ -10,7 +10,7 @@ let eyelX = 0;
 let eyelY = 0;
 
 
-
+let gameover;
 let img;
 let cam;
 let target;
@@ -38,6 +38,7 @@ let life = 3;
 let score=0;
 
 function preload() {
+    gameover = loadImage('gameover.png')
     target = loadImage("https://cdn.glitch.com/58200b26-1b78-4f2d-abc8-e08313ebb3af%2F%E5%87%86%E6%98%9F.png?v=1618451561761")
     hole = loadImage("https://cdn.glitch.com/58200b26-1b78-4f2d-abc8-e08313ebb3af%2F%E7%8E%BB%E7%92%83%E7%A2%8E%E7%89%87.png?v=1618451481713")
     shot_sound = loadSound('https://cdn.glitch.com/58200b26-1b78-4f2d-abc8-e08313ebb3af%2F%E5%BB%B6%E8%BF%9F%E6%9E%AA.mp3?v=1618485000322')
@@ -81,9 +82,7 @@ function draw() {
 
     text("life remain:"+life, 350, 500);
 
-    if (life == 0) {
-        text("GAME OVER", 500, 500);
-    }
+
 
 
 
@@ -122,6 +121,9 @@ function draw() {
         pop();
     }
 
+    if (life == 0) {
+        image(gameover, 50, 100, 500,300);
+    }
 
 
 }

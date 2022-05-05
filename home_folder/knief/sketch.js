@@ -9,7 +9,7 @@ let noseY = 0;
 let eyelX = 0;
 let eyelY = 0;
 
-
+let gameover;
 
 let img;
 let cam;
