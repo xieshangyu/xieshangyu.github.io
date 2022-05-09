@@ -70,7 +70,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(1280, 960);
+    createCanvas(windowWidth, windowHeight);
     video = createCapture(VIDEO);
     video.hide();
     poseNet = ml5.poseNet(video, modelReady);
@@ -108,8 +108,19 @@ function draw() {
     text("shoot remain:"+(500-counter%500)/100, 200, 500);
 
     text("life remain:"+life, 350, 500);
-
     pop()
+
+    push()
+    stroke(0);
+    strokeWeight(4);
+    noFill();
+    rect(450, 490, 200, 20);
+    
+    noStroke();
+    fill(255, 0, 0);
+    rect(450, 490, life*40, 20);
+    pop()
+
 
     push()
     textSize(30);
