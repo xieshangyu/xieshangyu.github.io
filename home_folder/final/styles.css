@@ -206,8 +206,15 @@ a.small:link, a.small:visited {
 
 
 a {
-    color: #000000;
+    color: black;
     font-size: 80px;
+
+  }
+  
+
+  b {
+    color: white;
+    font-size: 70px;
 
   }
   
