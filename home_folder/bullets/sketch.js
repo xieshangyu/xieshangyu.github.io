@@ -83,7 +83,11 @@ function draw() {
     text("life remain:"+life, 350, 500);
 
 
-
+    push()
+    textSize(30);
+    fill(255,0,0);
+    text('Dodge bullets and prevent bullets from hitting your head', 50, 550);
+    pop()
 
 
 

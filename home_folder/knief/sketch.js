@@ -103,12 +103,19 @@ function draw() {
 
     background(220);
 
-
+    push()
     text("score:"+score, 100, 500);
     text("shoot remain:"+(500-counter%500)/100, 200, 500);
 
     text("life remain:"+life, 350, 500);
 
+    pop()
+
+    push()
+    textSize(30);
+    fill(255,0,0);
+    text('Use your hand to block the dagger!!!', 50, 550);
+    pop()
 
 
 
