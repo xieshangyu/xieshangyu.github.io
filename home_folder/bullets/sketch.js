@@ -89,7 +89,19 @@ function draw() {
     rect(450, 490, 200, 20);
     
     noStroke();
-    fill(255, 0, 0);
+    if(life>=3)
+    {
+        fill(0, 255, 0);
+    }
+    if(life>1 && life<3)
+    {
+        fill(255, 255, 0);
+    }
+    if( life<=1)
+    {
+        fill(255, 0, 0);
+    }
+
     rect(450, 490, life*40, 20);
     pop()
 
